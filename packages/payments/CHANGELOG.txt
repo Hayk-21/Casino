@@ -1,0 +1,13 @@
+Payments
+--------
+
+CHANGES HISTORY
+---------------
+v1.5.2 - 26 October 2019
+- Display extra destination tag / memo field after creating a deposit request (required for coins like XRP, XMR, STEEM and some others).
+
+v1.5.1 - 07 October 2019
+- Handle withdrawal cancellations on coinpayments.net side.
+- Ability to mark withdrawals as completed or cancelled if a coin transaction was completed, but an IPN didn't reach the website.
+- Ability to filter deposits and withdrawals by status in the backend.
+- Ability to approve, complete, cancel withdrawals from the withdrawals index page.

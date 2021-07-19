@@ -1,0 +1,14 @@
+@media (max-width: 1200px) {
+	header {
+		.header__upper,
+		.header__content {
+			padding: 10px $padding-mobile;
+		}
+	}
+  .content{
+    padding: 0 $padding-laptop;
+  }
+  footer{
+    padding: 30px $padding-mobile;
+  }
+}

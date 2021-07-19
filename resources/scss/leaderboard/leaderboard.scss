@@ -1,0 +1,128 @@
+#leaderboard_wrapper {
+  width: 100%;
+  margin-top: 30px;
+  #leaderboard_length,
+  #leaderboard_filter,
+  #leaderboard_info {
+    display: none;
+  }
+  .dataTables_paginate {
+    display: table;
+    margin: 40px auto;
+    float: none;
+    border: 1px solid #538c31;
+    padding: 0;
+    // text-align: center;
+    a {
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      color: white !important;
+      font-weight: 900;
+      font-size: 20px;
+    }
+    .paginate_button {
+      &:active,
+      &:hover,
+      &.current {
+        background: #538c31;
+        box-shadow: none;
+      }
+    }
+  }
+  caption {
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 30px;
+    div {
+      display: flex;
+      margin-top: 30px;
+    }
+    .no-border{
+      border-bottom: none;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+      border: 1px solid #538c31;
+      color: white;
+      padding: 8px 14px;
+      width: 200px;
+      margin-right: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .flex{
+      display: flex !important;
+    }
+    .no-flex{
+      all: unset;
+      position: relative;
+      .dropdown{
+        position: absolute;
+        background-color: #141414;
+        border:1px solid #538c31;
+        border-top: none;
+        display: none;
+        width: 100%;
+        padding: 0 14px;
+        width: 200px;
+        margin-top: 0;
+        flex-direction: column;
+        gap: 10px;
+        &-divider{
+          margin-top: 10px;
+        }
+        a{
+          font-size: 16px;
+          color: white;
+					margin-bottom: 10px;
+
+        }
+      }
+    }
+  }
+  table {
+    .name {
+      text-align: left;
+      color: #ffd400;
+    }
+    thead {
+      tr {
+        background-color: #1e1e1e;
+        th {
+          padding: 22px 28px;
+          font-size: 14px;
+          color: #959595;
+        }
+      }
+    }
+    tbody {
+      tr {
+        background-color: transparent;
+        td {
+          text-align: center;
+          color: white;
+          border-bottom: 1px solid #464646;
+          padding: 16px 28px;
+          &:not(:last-of-type) {
+            border-right: 1px solid #464646;
+          }
+          &:not(:first-of-type) {
+            border-left: 1px solid #464646;
+          }
+        }
+        .name {
+          text-align: left;
+        }
+        .rank {
+          color: #6ba939;
+        }
+      }
+    }
+  }
+}

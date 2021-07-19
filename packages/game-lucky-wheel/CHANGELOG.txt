@@ -1,0 +1,16 @@
+Lucky Wheel
+-----------
+
+CHANGES HISTORY
+---------------
+v1.1.0 - 12 January 2020
+- Ability to manually input the bet amount.
+
+v1.0.2 - 19 November 2019
+- Bug fix: some section titles are not displayed on Android devices.
+
+v1.0.1 - 08 November 2019
+- Display individual lucky wheel games stats on the Leaderboard page.
+
+v1.0.0 - 06 November 2019
+- Initial release.

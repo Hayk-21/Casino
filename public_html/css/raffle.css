@@ -1,0 +1,250 @@
+
+.account_table_head {
+    width: 100%;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    vertical-align: baseline;
+}
+.account_table_head img {
+  vertical-align: baseline;
+}
+.account_table_head td:nth-child(4) {
+  border-right: none;
+}
+
+
+.account_heading {
+    font-weight: 800px;
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 42px;
+}
+
+
+/* raffle_complited_div */
+.raffle_complited_div {
+  height: 140px;
+  width: 100%;
+  background-size: cover;
+}
+.raffle_completed {
+  color: #ffffff; 
+  margin: 0 0 0 1vw; 
+  font-size: 14px; 
+  width: 110px;
+}
+.user_info {
+  font-size: 24px; 
+  font-weight: 800; 
+  margin: 0 auto !important;
+}
+.info_about_game_end {
+  color: #FFD400; 
+  font-size: 30px; 
+  font-weight: 800; 
+  margin: 0 auto  !important;
+}
+.next_draw {
+  font-size: 10px; 
+  font-weight: 600; 
+  margin: 4px auto  !important;
+}
+
+/* raffle_table_data css */
+h1.participants {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 34px;
+  text-align: center !important;
+  color: #ffffff;
+  margin-top: 72px;
+  margin-bottom: 29px;
+}
+
+table.raffle_table_data {
+    width: 100%;
+    margin: 0 auto 5vw;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+}
+table td {
+    height: 51px;
+    padding: 0 1vw;
+    border-bottom: 1px solid #464646;
+    border-right: 1px solid #464646;
+}
+
+table th {
+  height: 51px;
+  
+}
+thead {   
+    background: #1E1E1E; 
+    border: none;  
+    color: #959595; 
+}
+thead th {
+    height: 62px;
+   
+}
+thead span{
+  /* text-align: center; */
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+thead  span:nth-child(1){
+  text-align: left !important;
+  
+}
+thead  span:nth-child(2){
+  text-align: center;
+}
+thead  span:nth-child(3){
+  text-align: center;
+}
+table.raffle_table_data th:nth-child(1) {  
+  text-align: left;
+  padding: 0 1vw;  
+}
+table.raffle_table_data td:nth-child(1) {  
+  color:  #FFD400;
+  font-size: 13px !important;
+  text-align: left;
+  width: 37% !important;
+  /* padding: 0 3.9vw;   */
+}
+table.raffle_table_data td:nth-child(2) {  
+  text-align: center;
+  width: 30%;
+}
+table.raffle_table_data td:nth-child(3) {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border-right: none;
+    /* text-align: right;
+    padding: 0 2.9vw; */
+}
+.button_past_raf {
+  width: 184px;
+  height: 42px;
+  background: #538C31;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 243px;
+}
+.container_past_raffles {
+  display: flex;
+  justify-content: space-between;
+}
+.button_past_raf a {
+  text-decoration: none;
+  color: #ffffff !important;
+}
+
+@media (min-width: 481px) {
+  #desktop_table {
+    display: block;
+  }
+  #mobile_table {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #desktop_table {
+    display: none;
+  }
+  #mobile_table {
+    display: block;
+  }
+
+
+  .raffle_complited_div {
+    height: 100%;
+    width: 100%;
+  }
+  .raffle_completed {
+    color: #ffffff; 
+    margin: 0 0 0 1vw; 
+    font-size: 14px; 
+    width: 100%;
+  }
+  .user_info {
+    font-size: 20px; 
+    font-weight: 800; 
+    margin: 0 auto  !important;
+  }
+  .info_about_game_end {
+    color: #FFD400; 
+    font-size: 24px; 
+    font-weight: 800; 
+    margin: 0 auto  !important;
+  }
+  .next_draw {
+    font-size: 10px; 
+    font-weight: 600; 
+    margin: 4px auto  !important;
+  }
+
+
+  .account_heading {
+    font-size: 28px;
+  }
+  .cube_for_mobile {
+    width: 288px;
+    height: 219px;
+    background: #1E1E1E;
+    margin: 0 auto;
+  }
+  .cube_second_side {
+    margin-bottom: 10px;
+  }
+  .cube_first_side  {
+    padding: 5px 15px;
+    width: 288px;
+    height: 129px;
+    background: #1E1E1E;
+    margin: 0 auto;
+  }
+  .cube_first_side .headings div{
+    padding: 10px 0; 
+    color: #959595;
+    font-size: 14px;
+  }
+  .cube_first_side .contents{
+    font-size: 14px;
+  }
+  .cube_first_side .contents div{
+    color: #ffffff;
+    padding: 7px;
+  }
+  #info_right {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  #info_right div{
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  #main_table_mobile {
+    margin-bottom: 246px;
+  }
+}
+
+
+
+

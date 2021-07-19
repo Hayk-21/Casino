@@ -1,0 +1,80 @@
+@import "../config/variables.scss";
+@import "../config/mixins.scss";
+@import "includes/header.scss";
+@import "includes/footer.scss";
+
+* {
+	box-sizing: border-box;
+	outline: none;
+	font-family: "Montserrat", sans-serif;
+}
+body {
+	@include mg-pd-0;
+	background-color: #141414;
+}
+a {
+	text-decoration: none;
+}
+.no-overflow {
+	display: none !important;
+}
+.flex {
+	@include flex;
+}
+.yellow {
+	color: #ffd400 !important;
+}
+.jackpot {
+	width: 235px;
+	height: 50px;
+	justify-content: center !important;
+	display: none;
+	margin-left: 20px;
+	align-items: center;
+	margin: 20px auto;
+	img {
+		position: absolute;
+		margin-right: 10px;
+	}
+	.first {
+		color: white;
+		font-size: 14px;
+		font-weight: 700;
+		margin-right: 10px;
+	}
+	.amount {
+		font-size: 28px;
+		font-weight: 900;
+		width: 100%;
+		background: linear-gradient(#ffde00, #ff9400);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.btc {
+		font-size: 16px;
+		font-weight: 900;
+		background: linear-gradient(#ffde00, #ff9400);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin-left: -5px;
+	}
+}
+.border {
+	display: none;
+	width: 100%;
+	height: 4px;
+	background-color: #2a2929;
+}
+.content {
+	padding: 0 $padding-web;
+	@include flex-center;
+	flex-direction: column;
+	background-color: #141414;
+	min-height: calc(100vh - 130px)
+}
+
+@import "media/style-1366px.scss";
+@import "media/style-1200px.scss";
+@import "media/style-1024px.scss";
+@import "media/style-768px.scss";
+@import "media/style-480px.scss";

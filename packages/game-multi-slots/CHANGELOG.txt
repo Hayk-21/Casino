@@ -1,0 +1,17 @@
+Multi-slots
+-----------
+
+CHANGES HISTORY
+---------------
+v1.2.0 - 12 January 2020
+- Ability to manually input the bet amount.
+
+v1.1.0 - 16 October 2019
+- Game page re-design.
+- Mobile version improvement.
+- Auto play mode
+- New color schemes support.
+- Ability to replace numeric slug in the URL with string and make a slot available at https://yourwebsite.com/games/multi-slots/MY-CUSTOM-SLUG.
+
+v1.0.0 - 19 June 2019
+- Initial release.

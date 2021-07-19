@@ -1,0 +1,301 @@
+
+/* registration block */
+h1 {
+  color: #ffffff;
+}
+#reg_form_and_social {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 794px;
+  background: #1E1E1E;
+  width: 90%;
+  margin: 96px auto;
+  padding: 10px 50px !important;
+  padding: 50px 50px;
+}
+.registration {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 500px;
+  margin-right: 100px;
+  border-right: 3px solid #2A2A2A;
+}
+
+.registration input{
+  width: 440px;
+  height: 60px;
+  background-color: #2A2A2A;
+  font-size: 24px;
+  border: none;
+  padding: 15px 24px;
+  color: #979797;
+  margin-top: 15px;
+}
+.registration input:checked {
+  background-color: #2A2A2A !important;
+  color: #979797;
+}
+.registration input[type="checkbox"] {
+  width: 24px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.registration input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+.registration label {
+  color: #979797;
+  margin-bottom: 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.registration .check_captcha {
+  margin-bottom: 30px !important;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 440px;
+  height: 111px;
+  background: #212121 !important;
+}
+.registration .webmaster {
+  margin-bottom: 0 !important;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.registration button {
+  width: 440px;
+  height: 60px;
+  background: #538C31;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  border: none;
+}
+.registration button:hover {
+  cursor: pointer;
+}
+.password_settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  margin-top: 20px;
+}
+.password_settings a{
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.social_network {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 275px;
+  margin-left: -300px;
+}
+.social_network a{
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #2A2A2A;
+  /* padding: 10px 30px; */
+  width: 440px;
+  height: 60px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.social_network a img {
+  margin-right: 15px; 
+}
+.social_network a img[src="assets/img/registration/Group 8.png"] {
+    margin-left: 38px;
+}
+
+
+
+@media (max-width: 1024px) {
+  #reg_form_and_social {
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .social_network {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #reg_form_and_social {
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .registration {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-right: none;
+  }
+  .social_network {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  #reg_form_and_social {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 10px auto !important;
+    padding: 0 10px !important;
+  }
+  .social_network {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: -300px;
+  }
+  .registration {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+    /* border-bottom: 3px solid #2A2A2A; */
+  }
+  .registration input{
+    width: 88vw;
+    height: 36px;
+    background-color: #2A2A2A;
+    font-size: 14px;
+    border: none;
+    padding: 7px 14px;
+    color: #979797;
+    margin: 15px auto;
+  }
+  .registration label {
+    color: #979797;
+    /* margin: 0 auto 20px; */
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .registration .check_captcha {
+    margin-bottom: 30px !important;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 70vw !important;
+    height: 100%;
+    background: #212121 !important;
+  }
+  /* .rc-anchor-light {
+      background: #212121 !important;
+  } */
+  .g-recaptcha {
+    background: #212121 !important;
+  }
+  .password_settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .password_settings a{
+    padding: 2px 5px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .social_network  {
+      margin-left: 0 !important;
+  }
+  .social_network a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #2A2A2A;
+    width: 88vw;
+    height: 36px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 10px;
+  }
+  .social_network a img {
+    margin-right: 15px; 
+    width: 24px;
+    height: 24px;
+  }
+  .social_network a img[src="images/Group 8.png"] {
+    margin-left: 24px !important;
+  }
+  .registration input[type="checkbox"]:checked {
+    background: #538C31 !important;
+  }
+  .registration .webmaster {
+    margin-bottom: 0 !important;
+    font-size: 14px;
+    color: #ffffff;
+  } 
+  .registration button {
+    width: 88vw;
+    height: 36px;
+    background: #538C31;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    border: none;
+  }
+  .social_network a img[src="assets/img/registration/Group 8.png"] {
+    margin-left: 22px;
+  }
+  .empty_div_border {
+    height: 3px;
+    border-bottom: 3px solid #2A2A2A;
+    width: 100vw;
+    margin-top: 30px;
+    margin-left: -10px;
+  }
+  
+  
+}
+
+

@@ -1,0 +1,461 @@
+/* registration block */
+h1 {
+    color: #ffffff;
+  }
+  #reg_form_and_social {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 794px;
+    background: #1E1E1E;
+    width: 90%;
+    margin: 96px auto;
+    padding: 10px 50px !important;
+    padding: 50px 50px;
+  }
+  .registration {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 500px;
+    margin-right: 100px;
+    border-right: 3px solid #2A2A2A;
+  }
+  .registration input{
+    width: 440px;
+    height: 60px;
+    background-color: #2A2A2A;
+    font-size: 24px;
+    border: none;
+    padding: 15px 24px;
+    color: #979797;
+    margin-top: 15px;
+  }
+  .registration input:checked {
+    background-color: #2A2A2A !important;
+    color: #979797;
+  }
+  /* #checkbox {
+    width: 24px;
+    height: 25px;
+    margin-right: 20px;
+    background-color: #538C31 !important;
+  } */
+  /* #checkbox:checked:after {
+    background: #538C31 !important;
+  } */
+  .registration input[type="checkbox"]:hover {
+    cursor: pointer;
+  }
+  .registration label {
+    color: #979797;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .registration .check_webmaster {
+    margin-bottom: 30px !important;
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .registration .webmaster {
+    margin-bottom: 0 !important;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 1vw;
+  }
+
+  /* custom checkbox */
+  input[type=checkbox] {
+    position: relative;
+    width: 24px;
+    height: 25px;
+    color: #ffffff;
+    /* border: 1px solid #bdc1c6; */
+    /* border-radius: 4px; */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    cursor: pointer;
+    transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+    padding: 0 !important;
+  }
+  input[type=checkbox]::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 2px;
+    left: 7px;
+    width: 8px;
+    height: 14px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  input[type=checkbox]:checked {
+    color: #fff;
+    background: #538C31 !important;
+  }
+  input[type=checkbox]:checked::before {
+    opacity: 1;
+  }
+  input[type=checkbox]:checked ~ label::before {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  label {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0 0.25em 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  label::before {
+    position: absolute;
+    content: attr(data-content);
+    color: #9c9e9f;
+    -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+            clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    -webkit-text-decoration-color: #363839;
+            text-decoration-color: #363839;
+    transition: -webkit-clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  /* end checkbox css */
+
+
+
+  .social_network a img[src="images/Group 8.png"] {
+    margin-left: 38px;
+  }
+  
+  .registration button {
+    width: 440px;
+    height: 60px;
+    background: #538C31;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+  }
+  .registration button:hover {
+    cursor: pointer;
+  }
+  .social_network {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 275px;
+    margin-left: -300px;
+  }
+  .social_network a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #2A2A2A;
+    /* padding: 10px 30px; */
+    width: 440px;
+    height: 60px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 800;
+
+  }
+  .social_network a img {
+    margin-right: 15px; 
+  }
+  .social_network a img.fb {
+    margin-left: 37px;
+  }
+  
+  @media (max-width: 1024px) {
+    #reg_form_and_social {
+      justify-content: center;
+      flex-direction: column;
+      height: auto;
+      width: 90%;
+      margin: 10px auto;
+    }
+    .social_network {
+      margin-left: 0 !important;
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 769px) {
+    #reg_form_and_social {
+      justify-content: center;
+      flex-direction: column;
+      height: auto;
+      width: 90%;
+      margin: 10px auto;
+    }
+    .registration {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      border-right: none;
+    }
+    .social_network {
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-top: 30px;
+      margin-left: 0 !important;
+    }
+    .registration input{
+      width: 80vw;
+    }
+    
+  /* custom checkbox */
+  input[type=checkbox] {
+    position: relative;
+    width: 24px;
+    height: 25px;
+    color: #ffffff;
+    /* border: 1px solid #bdc1c6; */
+    /* border-radius: 4px; */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    cursor: pointer;
+    transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+    padding: 0 !important;
+  }
+  input[type=checkbox]::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 2px;
+    left: 7px;
+    width: 8px;
+    height: 14px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  input[type=checkbox]:checked {
+    color: #fff;
+    background: #538C31 !important;
+  }
+  input[type=checkbox]:checked::before {
+    opacity: 1;
+  }
+  input[type=checkbox]:checked ~ label::before {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  label {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0 0.25em 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  label::before {
+    position: absolute;
+    content: attr(data-content);
+    color: #9c9e9f;
+    -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+            clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    -webkit-text-decoration-color: #363839;
+            text-decoration-color: #363839;
+    transition: -webkit-clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  /* end checkbox css */
+  }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+    #reg_form_and_social {
+      display: flex;
+      justify-content: center !important;
+      align-items: center;
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      margin: 10px auto !important;
+      padding: 0 10px !important;
+    }
+    .social_network {
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+    .registration {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      width: 100%;
+      margin-left: 10px;
+      /* border-bottom: 3px solid #2A2A2A; */
+    }
+    .registration input{
+      width: 88vw;
+      height: 36px;
+      background-color: #2A2A2A;
+      font-size: 14px;
+      border: none;
+      padding: 7px 14px;
+      color: #979797;
+      margin: 15px auto;
+    }
+    .registration label {
+      color: #979797;
+      /* margin: 0 auto 20px; */
+      cursor: pointer;
+      font-size: 12px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .social_network a{
+      text-decoration: none;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid #2A2A2A;
+      width: 88vw;
+      height: 36px;
+      margin-bottom: 15px;
+      font-size: 12px;
+      font-weight: 300;
+      margin-left: 10px;
+    }
+    .social_network a img {
+      margin-right: 15px; 
+      width: 24px;
+      height: 24px;
+    }
+    .social_network a img[src="assets/img/registration/Group 8.png"] {
+      margin-left: 22px;
+    }
+    
+  /* custom checkbox */
+  input[type=checkbox] {
+    position: relative;
+    width: 24px;
+    height: 25px;
+    color: #ffffff;
+    /* border: 1px solid #bdc1c6; */
+    /* border-radius: 4px; */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    cursor: pointer;
+    transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+    padding: 0 !important;
+  }
+  input[type=checkbox]::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 2px;
+    left: 7px;
+    width: 8px;
+    height: 14px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  input[type=checkbox]:checked {
+    color: #fff;
+    background: #538C31 !important;
+  }
+  input[type=checkbox]:checked::before {
+    opacity: 1;
+  }
+  input[type=checkbox]:checked ~ label::before {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  label {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0 0.25em 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  label::before {
+    position: absolute;
+    content: attr(data-content);
+    color: #9c9e9f;
+    -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+            clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    -webkit-text-decoration-color: #363839;
+            text-decoration-color: #363839;
+    transition: -webkit-clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  /* end checkbox css */
+    .registration .webmaster {
+      margin-bottom: 0 !important;
+      font-size: 14px;
+      color: #ffffff;
+    } 
+    .registration button {
+      width: 88vw;
+      height: 36px;
+      background: #538C31;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 800;
+      border: none;
+    }
+    .empty_div_border {
+      height: 3px;
+      border-bottom: 3px solid #2A2A2A;
+      width: 100vw;
+      margin-top: 30px;
+      margin-left: -10px;
+    }
+    
+  }
+  
+  
+  

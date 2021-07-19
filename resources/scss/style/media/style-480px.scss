@@ -1,0 +1,24 @@
+@media (max-width: 480px) {
+	header {
+		.header__content {
+			height: 70px;
+			padding: 0 $padding-mobile;
+			.logo {
+				span {
+					display: none;
+				}
+				img {
+					width: 24px;
+					height: 24px;
+				}
+			}
+		}
+	}
+	.header__mobile{
+		min-height: calc(100vh - 70px);
+	}
+	.content {
+		padding: 0 $padding-mobile;
+		min-height: calc(100vh - 70px);
+	}
+}

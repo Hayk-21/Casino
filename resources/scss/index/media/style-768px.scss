@@ -1,0 +1,139 @@
+@media (max-width: 768px) {
+	.secondline{
+		padding:0 10px;
+	}
+	.item {
+		background-position: center;
+		.viewmore {
+			display: block;
+			text-align: center;
+			width: 100%;
+		}
+		.biggestwins {
+			display: none;
+		}
+	}
+	.dice {
+		padding: 80px 40px;
+		height: unset;
+		align-items: center;
+		&__game {
+      margin-bottom: 20px;
+			span{
+				margin-bottom: 20px;
+			}
+			&--selections {
+				margin-bottom: 20px;
+				&:first-of-type {
+					button {
+						&:nth-of-type(2) {
+							width: calc(37.5% - 10px);
+						}
+						&:nth-of-type(3) {
+							width: calc(37.5% - 10px);
+						}
+					}
+				}
+				input {
+					width: calc(75% - 10px);
+				}
+				button {
+					width: calc(25% - 10px);
+				}
+			}
+		}
+	}
+	.probabilitytext {
+		margin-top: 30px;
+	}
+	.biggestwin__mobile {
+		@include flex-justify-sp-btw;
+		align-items: center;
+		padding: 20px $padding-mobile;
+		color: #538c31;
+		font-weight: 700;
+		span {
+			font-size: 20px;
+		}
+		.btc {
+			font-size: 24px;
+		}
+	}
+	#wins__mobile {
+		display: block;
+		.item {
+			height: 130px;
+			.wins {
+				height: 60px;
+				color: white;
+				@include flex-align-center;
+				justify-content: flex-start;
+				width: 90%;
+				background-color: #2a2929;
+				position: relative;
+				// margin-top: 20px;
+				// &:first-of-type{
+				// 	margin-top: 0px;
+				// }
+				.winner {
+					all: unset;
+					position: absolute;
+					top: -15px;
+					left: -15px;
+				}
+				img {
+					width: 60px;
+					height: 60px;
+					margin-right: 10px;
+				}
+				div {
+					@include flex-column;
+					.gamename {
+						font-size: 12px;
+						font-weight: 500;
+						color: white;
+					}
+					.username {
+						font-size: 12px;
+						font-weight: 500;
+						color: #959595;
+					}
+					.win {
+						font-size: 12px;
+						font-weight: 900;
+						color: #ffd400;
+					}
+				}
+			}
+		}
+	}
+	.content {
+		.biggestwin-ad {
+			@include flex-column;
+			height: 300px;
+			width: 100%;
+			padding: 35px 38px;
+			margin-bottom: 40px;
+			.letfwrapper {
+				img {
+					height: 54px;
+				}
+			}
+		}
+		.luckygames {
+			&__card {
+				width: calc(50% - 20px);
+				img {
+					max-width: 100% !important;
+					height: unset !important;
+				}
+			}
+		}
+		#leaderboard_wrapper {
+			display: none;
+		}
+		#leaderboard__mobile {
+			display: block;
+		}
+	}
+}

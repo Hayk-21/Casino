@@ -1,0 +1,1 @@
+import"es6-promise/auto";import"bootstrap";import axios from"axios";import"./vue";axios.defaults.headers.common["X-Requested-With"]="XMLHttpRequest";let token=document.head.querySelector('meta[name="csrf-token"]');token?axios.defaults.headers.common["X-CSRF-TOKEN"]=token.content:console.error("CSRF TOKEN NOT FOUND");

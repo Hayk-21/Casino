@@ -1,0 +1,295 @@
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none; }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414 !important;
+    font-family: "Montserrat", sans-serif; 
+    width: 100%;
+}
+  
+  a {
+    text-decoration: none; }
+ 
+
+.bonuses_heading {
+    font-weight: 800px;
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 42px;
+}
+.container_bonuses_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 115px;
+} 
+.left_bonus_block {
+    width: 100%;
+    height: 864px;
+    background: #1E1E1E;
+    margin-right: 20px;
+    padding: 0 25px;
+}
+.left_bonus_block .input_site_link {
+  width: 20vw;
+  height: 46px;
+  color: #ffffff;
+  background: #1E1E1E;
+  outline: none;
+  border: 3px solid #2A2929;
+  font-size: 16px;
+  padding: 0 15px;
+  margin-right: 23px;
+  opacity: 0.5;
+  font-weight: 700;
+}
+.left_bonus_block h3.referral_program {
+  color: #FFD100;
+  font-size: 34px;
+  font-weight: 800;
+  opacity: 80%;
+  font-family: 'Montserrat';
+}
+.left_bonus_block p.referral_frineds {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+
+}
+.left_bonus_block .social_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.left_bonus_block .social_block a {
+  margin-right: 16px;
+}
+.left_bonus_block h4.bonuses_for_users {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.left_bonus_block .text_container {
+  margin-top: 35px;
+  margin-left: -40px;
+}
+.left_bonus_block .text_container img {
+  margin-bottom: 7px;
+}
+.left_bonus_block .left_img {
+  margin-left: -30px;
+}
+.last_paragraph {
+  margin-top: 38px;
+}
+
+.right_bonus_block {
+  height: 864px;
+  background: #1E1E1E;
+  width: 100%;
+  padding: 0 15px;
+}
+
+
+
+
+
+@media (max-width: 1030px) {
+  .container_bonuses_block {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .left_bonus_block {
+    width: 100%;
+    height: 864px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .left_bonus_block .text_container img {
+    margin-bottom: 7px;
+    width: 40vw;
+    margin-left: -60px;
+  }
+  .left_bonus_block .input_site_link {
+    width: 60vw;
+  }
+  .last_paragraph {
+    margin-top: 10px;
+  }
+  .right_bonus_block {
+    height: 864px;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .right_bonus_block img {
+    width: 50vw;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .container_bonuses_block {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  } 
+  .left_bonus_block {
+    width: 100%;
+    height: 864px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .left_bonus_block .text_container img {
+    margin-bottom: 7px;
+    width: 40vw;
+    margin-left: -60px;
+  }
+  .left_bonus_block .input_site_link {
+    width: 60vw;
+  }
+  .last_paragraph {
+    margin-top: 10px;
+  }
+  .right_bonus_block {
+    height: 864px;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .right_bonus_block img {
+    width: 60vw;
+    height: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .container_bonuses_block {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  } 
+  .left_bonus_block h3.referral_program {
+    font-size: 24px;
+  }
+  .left_bonus_block p.referral_frineds {
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+  .left_bonus_block h4.bonuses_for_users {
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .left_bonus_block {
+    width: 100%;
+    height: 864px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+  }
+  .left_bonus_block .text_container {
+    margin-top: 0;
+    /* margin-left: -40px; */
+  }
+  .left_bonus_block .text_container img {
+    margin-bottom: 7px;
+    width: 80vw;
+    margin-left: -60px;
+  }
+  .left_bonus_block .input_site_link {
+    width: 50vw;
+  }
+  .left_bonus_block .left_img {
+    visibility: hidden;
+  }
+  .copy_button {
+    width: 26vw;
+  }
+  .last_paragraph {
+    margin-top: 0;
+  }
+  .right_bonus_block {
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .right_bonus_block img {
+    width: 80vw;
+    height: 100%;
+  }
+}
+@media (max-width: 321px) {
+  .container_bonuses_block {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  } 
+  .left_bonus_block h3.referral_program {
+    font-size: 22px;
+    opacity: 0.8;
+  }
+  .left_bonus_block p.referral_frineds {
+    font-size: 11px;
+    font-weight: 200;
+    margin-bottom: 15px;
+  }
+  .left_bonus_block h4.bonuses_for_users {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .left_bonus_block {
+    width: 100vw;
+    height: 664px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+  }
+  .left_bonus_block .text_container {
+    height: 30vw !important;
+    margin-top: -240px;
+  }
+  .left_bonus_block .text_container img {
+    margin-bottom: 7px;
+    width: 90vw;
+    height: 18vw;
+    margin: 0 auto;
+    margin-left: -65px;
+  }
+  .left_bonus_block .input_site_link {
+    width: 60vw;
+    margin-right: 7px;
+  }
+  .left_bonus_block .left_img {
+    visibility: hidden;
+  }
+  .copy_button {
+    width: 26vw;
+    margin-right: 7px;
+  }
+  .last_paragraph {
+    margin-top: -90px;
+  }
+  .right_bonus_block {
+    height: 100%;
+    width: 100vw;
+    padding: 0 15px;
+    margin-bottom: -80px;
+  }
+  .right_bonus_block img {
+    width: 110vw;
+    height: 100%;
+    margin-left: -30px;
+  }
+}
+
+
+
+

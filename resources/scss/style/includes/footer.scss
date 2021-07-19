@@ -1,0 +1,37 @@
+footer {
+	background-color: $footer-color;
+	padding: 20px $padding-web;
+	@include flex-justify-sp-btw;
+	align-items: center;
+	flex-wrap: wrap;
+	.left {
+		display: flex;
+		justify-content: flex-start;
+		a {
+			&:first-of-type{
+				margin-right: 45px;
+			}
+			@include flex-justify-sp-btw;
+			align-items: center;
+			span {
+				color: #707070;
+				margin-left: 10px;
+			}
+			.logoname {
+				white-space: nowrap;
+				font-size: 22px;
+				font-weight: bolder;
+			}
+		}
+	}
+	.right {
+		a {
+			font-size: 16px;
+			font-weight: 500;
+			color: #959595;
+			&:not(:last-of-type) {
+				margin-right: 22.5px;
+			}
+		}
+	}
+}

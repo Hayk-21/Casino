@@ -1,0 +1,172 @@
+@media (max-width: 480px) {
+  .depwith {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    width: 300px;
+    border: 1px solid #538c31;
+    a {
+      color: white;
+      padding: 8px 32px;
+      width: 50%;
+      text-align: center;
+      &.deposit {
+        background-color: #538c31;
+      }
+    }
+  }
+  .balance {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 5px;
+    width: 300px;
+    background: #252424;
+    color: #707070;
+    margin: 20px auto;
+    // margin-bottom: 20px;
+    .deposit {
+      padding: 10px 32px;
+      font-weight: 900;
+      background-color: #538c31;
+      color: white;
+    }
+    div {
+      all: unset;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* align-items: center; */
+      gap: 5px;
+      span {
+        font-size: 14px;
+        font-weight: 700;
+        font-size: inherit;
+        color: inherit;
+      }
+      div {
+        font-size: 14px;
+        font-weight: 900;
+        color: #ffbc00;
+        // transform: translateY(10px);
+      }
+    }
+  }
+  .owl-theme {
+    .item {
+      padding: 30px 16px;
+      .credits{
+        font-size: 48px;
+        line-height: 42px
+      }
+      &__info{
+        width: 290px;
+        .box{
+          width: 260px !important;
+        }
+      }
+    }
+  }
+  .dice {
+    flex-direction: column;
+    &__wrapper {
+      margin-bottom: 20px;
+      img{
+        margin-bottom: 32px;
+      }
+    }
+    &__game {
+      .payout__tablet__mobile {
+        margin-top: 30px;
+        .payout {
+          label {
+            left: 0;
+            top: -35px;
+            text-align: left;
+            display: block;
+          }
+        }
+      }
+    }
+    .buttons {
+      width: 100%;
+      right: 0;
+      justify-content: center;
+      button{
+        width: 140px;
+      }
+    }
+  }
+  #wins__mobile {
+    .item {
+      padding: 0 16px;
+      .wins {
+        width: 80%;
+      }
+    }
+  }
+  .content {
+    .lucky {
+      font-size: 22px;
+    }
+    .luckygames {
+      span {
+        font-size: 16px;
+      }
+      img {
+        &:nth-of-type(2) {
+          height: 100px;
+        }
+      }
+    }
+    .biggestwin-ad{
+      padding:38px 26px;
+      .big{
+        font-size: 24px;
+      }
+      .event{
+        font-size: 15px;
+      }
+      .centerwrapper{
+        text-align: center;
+        .username{
+          justify-content: center;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .fairraffle {
+      .raffle {
+        .participants {
+          text-align: center;
+          .vertical{
+            display: none;
+          }
+          &__wrapper {
+            width: unset;
+          }
+          span {
+            padding: 0;
+          }
+          &__info {
+            width: 100%;
+            align-items: center;
+            p {
+              width: calc(100% - 10px);
+              // font-size: 14px;
+              padding-left: 0;
+              img {
+                left: unset;
+                transform: translateX(-30px);
+              }
+            }
+          }
+        }
+      }
+      .fair {
+        padding: 40px 15px;
+      }
+    }
+  }
+}

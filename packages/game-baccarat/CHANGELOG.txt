@@ -1,0 +1,10 @@
+Baccarat
+--------
+
+CHANGES HISTORY
+---------------
+v1.1.0 - 12 January 2020
+- Ability to manually input the bet amount.
+
+v1.0.0 - 12 November 2019
+- Initial release.

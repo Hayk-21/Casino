@@ -1,0 +1,1 @@
+import{copyToClipboard}from"./utils";window.copyToClipboard=copyToClipboard;
